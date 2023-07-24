@@ -1,0 +1,65 @@
+:root{
+    --white-color: #ffff;
+    --text-color: #333;
+    --primary-color: #e30019;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+*{
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;;
+}
+.grid{
+    margin: 0 auto;
+    width: 1200px;
+    max-width: 100%;
+}
+.grid__full-width{
+    width: 100%;
+}
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -.5rem;
+    margin-right: -.5rem;
+}
+.grid__column-2{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    width: 16.666667%;
+}
+.grid__column-10{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    width: 83.333333%;
+}
+.grid__column-2-5{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    width: 20%;
+}
+.product-categories__container{
+    background-color: var(--white-color);
+    position: absolute;
+    z-index: 1;
+    left: 23%;
+    right: 9.5%;
+    top: 18%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    display: none;
+}
+/*animation */
+@keyframes growth{
+    from{
+        transform: scale(var(--growth-from));
+    }
+    to{
+        transform: scale(var(--growth-to));
+    }
+} 
