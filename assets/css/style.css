@@ -332,3 +332,6 @@
 .home-product__directory-item--laptop-gaming:hover .product-categories--laptop-gaming{
     display: block;
 }
+.home-product__directory-item--pc-gaming:hover .product-categories--pc-gaming{
+    display: block;
+}
